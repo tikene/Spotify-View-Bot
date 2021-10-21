@@ -199,16 +199,16 @@ def doLogin(usr, pss):
             sleep(1)
 
 
-    uniform(0.5, 1)
+    sleep(uniform(0.5, 1)) 
     ActionChains(driver).click(usrObject).perform()
-    uniform(0.2, 0.4)
+    sleep(uniform(0.2, 0.4))
 
     for i in usr:
         ActionChains(driver).send_keys(i).perform()
         sleep(uniform(0.05, 0.1))
 
     ActionChains(driver).click(pssObject).perform()
-    uniform(0.2, 0.4)
+    sleep(uniform(0.2, 0.4))
 
     for i in pss:
         ActionChains(driver).send_keys(i).perform()
